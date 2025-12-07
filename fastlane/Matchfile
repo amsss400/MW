@@ -1,0 +1,41 @@
+# Matchfile
+
+# URL of the Git repository to store the certificates
+git_url(ENV["GIT_URL"])
+
+# Define the type of match to run
+# Default to "appstore" but can be overridden
+type(ENV["MATCH_TYPE"] || "appstore")
+
+# App identifiers for all BlueWallet apps
+app_identifier([
+  "io.bluewallet.bluewallet", 
+  "io.bluewallet.bluewallet.watch", 
+  "io.bluewallet.bluewallet.watch.extension", 
+  "io.bluewallet.bluewallet.Stickers", 
+  "io.bluewallet.bluewallet.MarketWidget"
+])
+
+# Your Apple Developer account email address
+username(ENV["APPLE_ID"])
+
+# The ID of your Apple Developer team
+team_id(ENV["ITC_TEAM_ID"])
+
+# Set readonly based on environment (default to true for safety)
+# Set to false explicitly when new profiles need to be created
+readonly(ENV["MATCH_READONLY"] == "false" ? false : true)
+
+# Define the platform to use
+platform("ios")
+
+# Git basic authentication through access token
+# This is useful for CI/CD environments where SSH keys aren't available
+git_basic_authorization(ENV["GIT_ACCESS_TOKEN"])
+
+# Storage mode (git by default)
+storage_mode("git")
+
+# Optional: The Git branch that is used for match
+# Default is 'master'
+# branch("main")

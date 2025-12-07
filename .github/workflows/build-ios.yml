@@ -1,0 +1,52 @@
+name: Build iOS IPA (Unsigned)
+
+on:
+  workflow_dispatch: # On lance manuellement pour économiser les minutes
+
+jobs:
+  build-ios:
+    runs-on: macos-13 # Serveur Mac obligatoire
+    
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v3
+
+      - name: Installation Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+
+      - name: Installation dépendances JS
+        run: npm install --legacy-peer-deps
+
+      - name: Installation Cocoapods (Dépendances iOS)
+        run: |
+          cd ios
+          pod install --repo-update
+
+      - name: Compilation iOS (No Signing)
+        run: |
+          cd ios
+          xcodebuild archive \
+            -workspace BlueWallet.xcworkspace \
+            -scheme BlueWallet \
+            -configuration Release \
+            -archivePath BlueWallet.xcarchive \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Création du fichier IPA
+        run: |
+          cd ios
+          mkdir -p Payload
+          mv BlueWallet.xcarchive/Products/Applications/BlueWallet.app Payload/
+          zip -r MalinWallet.ipa Payload
+
+      - name: Upload de l'IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: MalinWallet-iOS-Unsigned
+          path: ios/MalinWallet.ipa
+

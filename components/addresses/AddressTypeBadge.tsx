@@ -1,0 +1,59 @@
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+import loc, { formatStringAddTwoWhiteSpaces } from '../../loc';
+import { useTheme } from '../themes';
+
+type Props = { isInternal: boolean; hasTransactions: boolean };
+
+export const AddressTypeBadge: React.FC<Props> = ({ isInternal, hasTransactions }) => {
+  const { colors } = useTheme();
+
+  const stylesHook = StyleSheet.create({
+    changeBadge: { backgroundColor: colors.changeBackground },
+    receiveBadge: { backgroundColor: colors.receiveBackground },
+    usedBadge: { backgroundColor: colors.buttonDisabledBackgroundColor },
+    changeText: { color: colors.changeText },
+    receiveText: { color: colors.receiveText },
+    usedText: { color: colors.alternativeTextColor },
+  });
+
+  const badgeLabel = hasTransactions
+    ? loc.addresses.type_used
+    : isInternal
+      ? formatStringAddTwoWhiteSpaces(loc.addresses.type_change)
+      : formatStringAddTwoWhiteSpaces(loc.addresses.type_receive);
+
+  // eslint-disable-next-line prettier/prettier
+  const badgeStyle = hasTransactions
+   ? stylesHook.usedBadge
+   : isInternal
+    ? stylesHook.changeBadge
+    : stylesHook.receiveBadge;
+
+  // eslint-disable-next-line prettier/prettier
+  const textStyle = hasTransactions
+    ? stylesHook.usedText
+    : isInternal
+      ? stylesHook.changeText
+      : stylesHook.receiveText;
+
+  return (
+    <View style={[styles.container, badgeStyle]}>
+      <Text style={[styles.badgeText, textStyle]}>{badgeLabel}</Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    paddingVertical: 4,
+    paddingHorizontal: 10,
+    borderRadius: 20,
+    alignSelf: 'flex-end',
+  },
+  badgeText: {
+    fontSize: 12,
+    textAlign: 'center',
+  },
+});
