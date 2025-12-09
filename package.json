@@ -80,7 +80,7 @@
     "e2e:release-test": "detox test -c android.release --loglevel error",
     "e2e:release-test-device": "detox test -c android.release.device  --loglevel info --record-videos all",
     "tslint": "tsc",
-    "lint": " npm run tslint && node scripts/find-unused-loc.js && eslint --ext .js,.ts,.tsx '*.@(js|ts|tsx)' screen 'blue_modules/*.@(js|ts|tsx)' class models loc tests components navigation typings",
+    "lint": " npm run tslint && node scripts/find-unused-loc.js && eslint --ext .js,.ts,.tsx '*.@(js|ts|tsx)' screen 'malin_modules/*.@(js|ts|tsx)' class models loc tests components navigation typings",
     "lint:fix": "npm run lint -- --fix",
     "lint:quickfix": "git status --porcelain | grep -v '\\.json' | grep -E '\\.js|\\.ts' --color=never |  awk '{print $2}' | xargs eslint --fix; exit 0",
     "unit": "jest -b -w tests/unit/*"
@@ -117,7 +117,7 @@
     "aezeed": "0.0.5",
     "assert": "2.1.0",
     "base-x": "4.0.1",
-    "bc-bech32": "file:blue_modules/bc-bech32",
+    "bc-bech32": "file:malin_modules/bc-bech32",
     "bech32": "2.0.0",
     "bignumber.js": "9.3.1",
     "bip21": "2.0.3",
