@@ -24,7 +24,7 @@ import { BlueCurrentTheme, useTheme } from '../../components/themes';
 import loc from '../../loc';
 import { AddWalletStackParamList } from '../../navigation/AddWalletStack';
 import { BlueSpacing20 } from '../../components/BlueSpacing';
-import { concatUint8Arrays, uint8ArrayToHex } from '../../blue_modules/uint8array-extras';
+import { concatUint8Arrays, uint8ArrayToHex } from '../../malin_modules/uint8array-extras';
 
 type RouteProps = RouteProp<AddWalletStackParamList, 'ProvideEntropy'>;
 type NavigationProp = NativeStackNavigationProp<AddWalletStackParamList, 'ProvideEntropy'>;

@@ -6,7 +6,7 @@ import Keychain from 'react-native-keychain';
 import RNSecureKeyStore, { ACCESSIBLE } from 'react-native-secure-key-store';
 import Realm from 'realm';
 
-import * as encryption from '../blue_modules/encryption';
+import * as encryption from '../malin_modules/encryption';
 import presentAlert from '../components/Alert';
 import { randomBytes } from './rng';
 import { HDAezeedWallet } from './wallets/hd-aezeed-wallet';
@@ -26,7 +26,7 @@ import { ExtendedTransaction, Transaction, TWallet } from './wallets/types';
 import { WatchOnlyWallet } from './wallets/watch-only-wallet';
 import { getLNDHub } from '../helpers/lndHub';
 import { LightningArkWallet } from './wallets/lightning-ark-wallet.ts';
-import { hexToUint8Array, uint8ArrayToHex } from '../blue_modules/uint8array-extras';
+import { hexToUint8Array, uint8ArrayToHex } from '../malin_modules/uint8array-extras';
 import { HDTaprootWallet } from './wallets/hd-taproot-wallet';
 
 let usedBucketNum: boolean | number = false;

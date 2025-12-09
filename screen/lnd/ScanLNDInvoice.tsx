@@ -3,8 +3,8 @@ import { RouteProp, useFocusEffect, useRoute, useLocale } from '@react-navigatio
 import { ActivityIndicator, Keyboard, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Icon } from '@rneui/themed';
 
-import { btcToSatoshi, fiatToBTC } from '../../blue_modules/currency';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../../blue_modules/hapticFeedback';
+import { btcToSatoshi, fiatToBTC } from '../../malin_modules/currency';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../../malin_modules/hapticFeedback';
 import { BlueCard } from '../../BlueComponents';
 import Lnurl from '../../class/lnurl';
 import AddressInput from '../../components/AddressInput';

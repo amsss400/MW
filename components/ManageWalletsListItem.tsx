@@ -7,7 +7,7 @@ import { TransactionListItem } from './TransactionListItem';
 import { useTheme } from './themes';
 import { BitcoinUnit } from '../models/bitcoinUnits';
 import loc from '../loc';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../blue_modules/hapticFeedback';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../malin_modules/hapticFeedback';
 import { AddressItem } from './addresses/AddressItem';
 import { ItemType, AddressItemData } from '../models/itemTypes';
 import WalletGradient from '../class/wallet-gradient';

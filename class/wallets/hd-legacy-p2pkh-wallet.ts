@@ -2,10 +2,10 @@ import BIP32Factory, { BIP32Interface } from 'bip32';
 import { Psbt } from 'bitcoinjs-lib';
 import { CoinSelectReturnInput } from 'coinselect';
 
-import * as BlueElectrum from '../../blue_modules/BlueElectrum';
-import ecc from '../../blue_modules/noble_ecc';
+import * as BlueElectrum from '../../malin_modules/BlueElectrum';
+import ecc from '../../malin_modules/noble_ecc';
 import { AbstractHDElectrumWallet } from './abstract-hd-electrum-wallet';
-import { hexToUint8Array } from '../../blue_modules/uint8array-extras';
+import { hexToUint8Array } from '../../malin_modules/uint8array-extras';
 
 const bip32 = BIP32Factory(ecc);
 

@@ -10,8 +10,8 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import { writeFileAndExport } from '../../blue_modules/fs';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../../blue_modules/hapticFeedback';
+import { writeFileAndExport } from '../../malin_modules/fs';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../../malin_modules/hapticFeedback';
 import { BlueCard, BlueText } from '../../BlueComponents';
 import {
   HDAezeedWallet,

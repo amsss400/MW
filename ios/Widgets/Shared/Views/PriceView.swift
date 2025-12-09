@@ -1,9 +1,9 @@
 //
 //  PriceView.swift
-//  BlueWallet
+//  MalinWallet
 //
 //  Created by Marcos Rodriguez on 11/8/20.
-//  Copyright © 2020 BlueWallet. All rights reserved.
+//  Copyright © 2020 MalinWallet. All rights reserved.
 //
 
 import SwiftUI

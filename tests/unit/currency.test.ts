@@ -6,7 +6,7 @@ import {
   BTCToLocalCurrency,
   satoshiToBTC,
   satoshiToLocalCurrency,
-} from '../../blue_modules/currency';
+} from '../../malin_modules/currency';
 import { FiatUnit } from '../../models/fiatUnit';
 
 describe('currency', () => {

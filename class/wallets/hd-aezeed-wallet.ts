@@ -3,8 +3,8 @@ import BIP32Factory from 'bip32';
 import * as bitcoin from 'bitcoinjs-lib';
 import b58 from 'bs58check';
 
-import ecc from '../../blue_modules/noble_ecc';
-import { concatUint8Arrays, hexToUint8Array, uint8ArrayToHex } from '../../blue_modules/uint8array-extras';
+import ecc from '../../malin_modules/noble_ecc';
+import { concatUint8Arrays, hexToUint8Array, uint8ArrayToHex } from '../../malin_modules/uint8array-extras';
 import { AbstractHDElectrumWallet } from './abstract-hd-electrum-wallet';
 
 const bip32 = BIP32Factory(ecc);

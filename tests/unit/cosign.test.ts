@@ -5,7 +5,7 @@ import * as bitcoin from 'bitcoinjs-lib';
 import { HDLegacyP2PKHWallet, HDSegwitBech32Wallet, HDSegwitP2SHWallet, WatchOnlyWallet } from '../../class';
 import { CreateTransactionUtxo } from '../../class/wallets/types.ts';
 import { Transaction } from 'bitcoinjs-lib';
-import { hexToUint8Array } from '../../blue_modules/uint8array-extras/index';
+import { hexToUint8Array } from '../../malin_modules/uint8array-extras/index';
 
 describe('AbstractHDElectrumWallet.cosign', () => {
   it('different descendants of AbstractHDElectrumWallet can cosign one transaction', async () => {

@@ -1,6 +1,6 @@
 //
 //  ExtensionDelegate.swift
-//  BlueWalletWatch Extension
+//  MalinWalletWatch Extension
 //
 //  Created by Marcos Rodriguez on 3/6/19.
 //

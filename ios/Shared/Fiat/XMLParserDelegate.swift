@@ -1,9 +1,9 @@
 //
 //  XMLParserDelegate.swift
-//  BlueWallet
+//  MalinWallet
 //
 //  Created by Marcos Rodriguez on 11/13/23.
-//  Copyright © 2023 BlueWallet. All rights reserved.
+//  Copyright © 2023 MalinWallet. All rights reserved.
 //
 
 import Foundation

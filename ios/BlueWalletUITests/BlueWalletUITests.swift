@@ -1,14 +1,14 @@
 //
-//  BlueWalletUITests.swift
-//  BlueWalletUITests
+//  MalinWalletUITests.swift
+//  MalinWalletUITests
 //
 //  Created by Marcos Rodriguez on 12/6/23.
-//  Copyright © 2023 BlueWallet. All rights reserved.
+//  Copyright © 2023 MalinWallet. All rights reserved.
 //
 
 import XCTest
 
-class BlueWalletUITests: XCTestCase {
+class MalinWalletUITests: XCTestCase {
 
     var app: XCUIApplication!
 

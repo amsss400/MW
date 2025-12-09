@@ -1,9 +1,9 @@
 //
 //  Utilities.swift
-//  BlueWallet
+//  MalinWallet
 //
 //  Created by Marcos Rodriguez on 6/4/24.
-//  Copyright © 2024 BlueWallet. All rights reserved.
+//  Copyright © 2024 MalinWallet. All rights reserved.
 //
 
 import Foundation

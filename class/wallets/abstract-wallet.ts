@@ -4,7 +4,7 @@ import wif from 'wif';
 
 import { BitcoinUnit, Chain } from '../../models/bitcoinUnits';
 import { CreateTransactionResult, CreateTransactionUtxo, Transaction, Utxo } from './types';
-import { hexToUint8Array, concatUint8Arrays, uint8ArrayToHex } from '../../blue_modules/uint8array-extras';
+import { hexToUint8Array, concatUint8Arrays, uint8ArrayToHex } from '../../malin_modules/uint8array-extras';
 
 type WalletWithPassphrase = AbstractWallet & { getPassphrase: () => string };
 type UtxoMetadata = {

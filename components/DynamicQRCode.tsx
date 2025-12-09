@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Dimensions, LayoutAnimation, StyleSheet, TouchableOpacity, View } from 'react-native';
 import { Text } from '@rneui/themed';
 
-import { encodeUR } from '../blue_modules/ur';
+import { encodeUR } from '../malin_modules/ur';
 import { BlueCurrentTheme } from '../components/themes';
 import loc from '../loc';
 import QRCodeComponent from './QRCodeComponent';

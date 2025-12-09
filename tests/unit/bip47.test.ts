@@ -3,10 +3,10 @@ import assert from 'assert';
 import * as bitcoin from 'bitcoinjs-lib';
 import { ECPairFactory } from 'ecpair';
 
-import ecc from '../../blue_modules/noble_ecc';
+import ecc from '../../malin_modules/noble_ecc';
 import { HDSegwitBech32Wallet, WatchOnlyWallet } from '../../class';
 import { CreateTransactionUtxo } from '../../class/wallets/types';
-import { uint8ArrayToHex } from '../../blue_modules/uint8array-extras';
+import { uint8ArrayToHex } from '../../malin_modules/uint8array-extras';
 
 const ECPair = ECPairFactory(ecc);
 

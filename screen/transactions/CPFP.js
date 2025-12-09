@@ -3,8 +3,8 @@ import { ActivityIndicator, Linking, ScrollView, StyleSheet, TextInput, Touchabl
 import Clipboard from '@react-native-clipboard/clipboard';
 import PropTypes from 'prop-types';
 import { Text } from '@rneui/themed';
-import * as BlueElectrum from '../../blue_modules/BlueElectrum';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../../blue_modules/hapticFeedback';
+import * as BlueElectrum from '../../malin_modules/BlueElectrum';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../../malin_modules/hapticFeedback';
 import { BlueCard, BlueText } from '../../BlueComponents';
 import { HDSegwitBech32Transaction, HDSegwitBech32Wallet } from '../../class';
 import presentAlert, { AlertType } from '../../components/Alert';
@@ -14,7 +14,7 @@ import { BlueCurrentTheme } from '../../components/themes';
 import loc from '../../loc';
 import { StorageContext } from '../../components/Context/StorageProvider';
 import ReplaceFeeSuggestions from '../../components/ReplaceFeeSuggestions';
-import { majorTomToGroundControl } from '../../blue_modules/notifications';
+import { majorTomToGroundControl } from '../../malin_modules/notifications';
 import { BlueSpacing, BlueSpacing20 } from '../../components/BlueSpacing';
 
 const styles = StyleSheet.create({

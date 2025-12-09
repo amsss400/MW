@@ -16,7 +16,7 @@ import {
 } from 'react-native';
 import { Icon } from '@rneui/themed';
 
-import { satoshiToBTC, satoshiToLocalCurrency } from '../../blue_modules/currency';
+import { satoshiToBTC, satoshiToLocalCurrency } from '../../malin_modules/currency';
 import { BlueCard, BlueText } from '../../BlueComponents';
 import presentAlert from '../../components/Alert';
 import Button from '../../components/Button';

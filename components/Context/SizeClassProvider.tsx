@@ -1,6 +1,6 @@
 import React, { createContext, ReactNode, useEffect, useMemo, useState } from 'react';
 import { Dimensions, Platform, useWindowDimensions } from 'react-native';
-import { isDesktop, isTablet } from '../../blue_modules/environment';
+import { isDesktop, isTablet } from '../../malin_modules/environment';
 import useAppState from '../../hooks/useAppState';
 
 export enum SizeClass {

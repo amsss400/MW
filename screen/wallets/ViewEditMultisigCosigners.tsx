@@ -16,8 +16,8 @@ import {
   View,
 } from 'react-native';
 import { Badge, Icon } from '@rneui/themed';
-import { isDesktop } from '../../blue_modules/environment';
-import { encodeUR } from '../../blue_modules/ur';
+import { isDesktop } from '../../malin_modules/environment';
+import { encodeUR } from '../../malin_modules/ur';
 import { BlueCard, BlueFormMultiInput, BlueTextCentered } from '../../BlueComponents';
 import { HDSegwitBech32Wallet, MultisigCosigner, MultisigHDWallet } from '../../class';
 import presentAlert from '../../components/Alert';

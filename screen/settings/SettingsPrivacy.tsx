@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Platform, StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native';
 import { openSettings } from 'react-native-permissions';
-import A from '../../blue_modules/analytics';
+import A from '../../malin_modules/analytics';
 import { Header } from '../../components/Header';
 import ListItem, { PressableWrapper } from '../../components/ListItem';
 import { useTheme } from '../../components/themes';
 import loc from '../../loc';
 import { useStorage } from '../../hooks/context/useStorage';
 import { useSettings } from '../../hooks/context/useSettings';
-import { isDesktop } from '../../blue_modules/environment';
+import { isDesktop } from '../../malin_modules/environment';
 import SafeAreaScrollView from '../../components/SafeAreaScrollView';
 import { BlueSpacing20 } from '../../components/BlueSpacing';
 

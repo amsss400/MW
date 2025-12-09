@@ -1,7 +1,7 @@
 import React, { forwardRef, useImperativeHandle, useRef, useState } from 'react';
 import { Animated, Easing, StyleSheet, TextInput, View } from 'react-native';
 import { useTheme } from './themes';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../blue_modules/hapticFeedback';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../malin_modules/hapticFeedback';
 import loc from '../loc';
 
 export interface PasswordInputHandle {

@@ -1,7 +1,7 @@
 import assert from 'assert';
 
 import { HDLegacyP2PKHWallet, HDSegwitP2SHWallet, LegacyWallet, SegwitBech32Wallet, SegwitP2SHWallet } from '../../class';
-import { uint8ArrayToHex } from '../../blue_modules/uint8array-extras';
+import { uint8ArrayToHex } from '../../malin_modules/uint8array-extras';
 
 describe('P2SH Segwit HD (BIP49)', () => {
   it('can create a wallet', async () => {

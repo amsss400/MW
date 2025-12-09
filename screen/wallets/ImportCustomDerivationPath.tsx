@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { RouteProp, useNavigation, useRoute } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { FlatList, StyleSheet, TextInput, View } from 'react-native';
-import debounce from '../../blue_modules/debounce';
+import debounce from '../../malin_modules/debounce';
 import { BlueFormLabel, BlueTextCentered } from '../../BlueComponents';
 import { HDLegacyP2PKHWallet, HDSegwitBech32Wallet, HDSegwitP2SHWallet, HDTaprootWallet } from '../../class';
 import { validateBip32 } from '../../class/wallet-import';

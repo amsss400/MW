@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { Alert, Keyboard, LayoutAnimation, Platform, StyleSheet, Switch, TextInput, View } from 'react-native';
-import * as BlueElectrum from '../../blue_modules/BlueElectrum';
-import triggerHapticFeedback, { HapticFeedbackTypes, triggerSelectionHapticFeedback } from '../../blue_modules/hapticFeedback';
+import * as BlueElectrum from '../../malin_modules/BlueElectrum';
+import triggerHapticFeedback, { HapticFeedbackTypes, triggerSelectionHapticFeedback } from '../../malin_modules/hapticFeedback';
 import { BlueCard, BlueText } from '../../BlueComponents';
 import DeeplinkSchemaMatch from '../../class/deeplink-schema-match';
 import presentAlert from '../../components/Alert';
@@ -21,12 +21,12 @@ import { CommonToolTipActions } from '../../typings/CommonToolTipActions';
 import { Divider } from '@rneui/themed';
 import { Header } from '../../components/Header';
 import AddressInput from '../../components/AddressInput';
-import { GROUP_IO_BLUEWALLET } from '../../blue_modules/currency';
+import { GROUP_IO_MALINWALLET } from '../../malin_modules/currency';
 import { Action } from '../../components/types';
 import ListItem, { PressableWrapper } from '../../components/ListItem';
 import HeaderMenuButton from '../../components/HeaderMenuButton';
 import { useSettings } from '../../hooks/context/useSettings';
-import { suggestedServers, hardcodedPeers, presentResetToDefaultsAlert } from '../../blue_modules/BlueElectrum';
+import { suggestedServers, hardcodedPeers, presentResetToDefaultsAlert } from '../../malin_modules/BlueElectrum';
 import SafeAreaScrollView from '../../components/SafeAreaScrollView';
 import { BlueSpacing10, BlueSpacing20 } from '../../components/BlueSpacing';
 
@@ -192,7 +192,7 @@ const ElectrumSettings: React.FC = () => {
               message: serverHost.endsWith('.onion') ? loc.settings.electrum_error_connect_tor : loc.settings.electrum_error_connect,
             });
           }
-          await DefaultPreference.setName(GROUP_IO_BLUEWALLET);
+          await DefaultPreference.setName(GROUP_IO_MALINWALLET);
 
           // Clear current data for the preferred host
           console.log('Clearing current data for the preferred host');

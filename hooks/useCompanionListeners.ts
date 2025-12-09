@@ -1,9 +1,9 @@
 import { CommonActions } from '@react-navigation/native';
 import { useCallback, useEffect, useRef } from 'react';
 import { AppState, AppStateStatus, Linking } from 'react-native';
-import { getClipboardContent } from '../blue_modules/clipboard';
-import { updateExchangeRate } from '../blue_modules/currency';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../blue_modules/hapticFeedback';
+import { getClipboardContent } from '../malin_modules/clipboard';
+import { updateExchangeRate } from '../malin_modules/currency';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../malin_modules/hapticFeedback';
 import {
   clearStoredNotifications,
   getDeliveredNotifications,
@@ -11,7 +11,7 @@ import {
   initializeNotifications,
   removeAllDeliveredNotifications,
   setApplicationIconBadgeNumber,
-} from '../blue_modules/notifications';
+} from '../malin_modules/notifications';
 import { LightningCustodianWallet } from '../class';
 import DeeplinkSchemaMatch from '../class/deeplink-schema-match';
 import loc from '../loc';

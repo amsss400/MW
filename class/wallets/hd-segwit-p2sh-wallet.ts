@@ -4,8 +4,8 @@ import { Psbt } from 'bitcoinjs-lib';
 import b58 from 'bs58check';
 import { CoinSelectReturnInput } from 'coinselect';
 
-import ecc from '../../blue_modules/noble_ecc';
-import { concatUint8Arrays, hexToUint8Array } from '../../blue_modules/uint8array-extras';
+import ecc from '../../malin_modules/noble_ecc';
+import { concatUint8Arrays, hexToUint8Array } from '../../malin_modules/uint8array-extras';
 import { AbstractHDElectrumWallet } from './abstract-hd-electrum-wallet';
 
 const bip32 = BIP32Factory(ecc);

@@ -23,7 +23,7 @@ import {
   mostRecentFetchedRate,
   satoshiToBTC,
   updateExchangeRate,
-} from '../blue_modules/currency';
+} from '../malin_modules/currency';
 import { BlueText } from '../BlueComponents';
 import confirm from '../helpers/confirm';
 import loc, { formatBalancePlain, formatBalanceWithoutSuffix, removeTrailingZeros } from '../loc';

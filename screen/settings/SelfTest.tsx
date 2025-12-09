@@ -8,10 +8,10 @@ import { Linking, ScrollView, StyleSheet, View } from 'react-native';
 import BlueCrypto from 'react-native-blue-crypto';
 import wif from 'wif';
 
-import * as BlueElectrum from '../../blue_modules/BlueElectrum';
-import * as encryption from '../../blue_modules/encryption';
-import * as fs from '../../blue_modules/fs';
-import ecc from '../../blue_modules/noble_ecc';
+import * as BlueElectrum from '../../malin_modules/BlueElectrum';
+import * as encryption from '../../malin_modules/encryption';
+import * as fs from '../../malin_modules/fs';
+import ecc from '../../malin_modules/noble_ecc';
 import { BlueText } from '../../BlueComponents';
 import {
   HDAezeedWallet,

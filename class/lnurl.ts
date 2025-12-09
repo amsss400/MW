@@ -3,7 +3,7 @@ import bolt11 from 'bolt11';
 import { sha256 } from '@noble/hashes/sha256';
 import { hmac } from '@noble/hashes/hmac';
 import CryptoJS from 'crypto-js';
-import ecc from '../blue_modules/noble_ecc';
+import ecc from '../malin_modules/noble_ecc';
 import { parse } from 'url'; // eslint-disable-line n/no-deprecated-api
 import { fetch } from '../util/fetch';
 

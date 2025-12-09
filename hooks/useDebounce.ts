@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import debounce from '../blue_modules/debounce';
+import debounce from '../malin_modules/debounce';
 
 // Overload signatures
 function useDebounce<T extends (...args: any[]) => any>(callback: T, delay: number): T;

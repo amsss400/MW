@@ -11,10 +11,10 @@ import { useRoute, RouteProp } from '@react-navigation/native';
 import presentAlert from '../../components/Alert';
 import { useTheme } from '../../components/themes';
 import Button from '../../components/Button';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../../blue_modules/hapticFeedback';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../../malin_modules/hapticFeedback';
 import SafeArea from '../../components/SafeArea';
-import { satoshiToBTC, satoshiToLocalCurrency } from '../../blue_modules/currency';
-import * as BlueElectrum from '../../blue_modules/BlueElectrum';
+import { satoshiToBTC, satoshiToLocalCurrency } from '../../malin_modules/currency';
+import * as BlueElectrum from '../../malin_modules/BlueElectrum';
 import { unlockWithBiometrics, useBiometrics } from '../../hooks/useBiometrics';
 import { TWallet, CreateTransactionTarget } from '../../class/wallets/types';
 import PayjoinTransaction from '../../class/payjoin-transaction';
@@ -25,8 +25,8 @@ import { ContactList } from '../../class/contact-list';
 import { useStorage } from '../../hooks/context/useStorage';
 import { HDSegwitBech32Wallet } from '../../class';
 import { useSettings } from '../../hooks/context/useSettings';
-import { majorTomToGroundControl } from '../../blue_modules/notifications';
-import { uint8ArrayToHex } from '../../blue_modules/uint8array-extras';
+import { majorTomToGroundControl } from '../../malin_modules/notifications';
+import { uint8ArrayToHex } from '../../malin_modules/uint8array-extras';
 
 enum ActionType {
   SET_LOADING = 'SET_LOADING',

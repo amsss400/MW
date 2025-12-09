@@ -10,7 +10,7 @@ import {
   TouchableWithoutFeedback,
   View,
 } from 'react-native';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../blue_modules/hapticFeedback';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../malin_modules/hapticFeedback';
 import { BlueTextCentered } from '../BlueComponents';
 import Button from '../components/Button';
 import SafeArea from '../components/SafeArea';

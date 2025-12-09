@@ -1,12 +1,12 @@
 import * as bitcoin from 'bitcoinjs-lib';
 import { ECPairFactory } from 'ecpair';
 
-import ecc from '../../blue_modules/noble_ecc';
+import ecc from '../../malin_modules/noble_ecc';
 
 import { SegwitBech32Wallet } from './segwit-bech32-wallet';
 import { CreateTransactionResult, CreateTransactionUtxo } from './types.ts';
 import { CoinSelectTarget } from 'coinselect';
-import { hexToUint8Array } from '../../blue_modules/uint8array-extras';
+import { hexToUint8Array } from '../../malin_modules/uint8array-extras';
 const ECPair = ECPairFactory(ecc);
 
 export class TaprootWallet extends SegwitBech32Wallet {

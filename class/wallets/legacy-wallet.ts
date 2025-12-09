@@ -5,9 +5,9 @@ import coinSelect, { CoinSelectOutput, CoinSelectReturnInput, CoinSelectTarget }
 import coinSelectSplit from 'coinselect/split';
 import { ECPairAPI, ECPairFactory, Signer } from 'ecpair';
 
-import * as BlueElectrum from '../../blue_modules/BlueElectrum';
-import ecc from '../../blue_modules/noble_ecc';
-import { hexToUint8Array, concatUint8Arrays } from '../../blue_modules/uint8array-extras';
+import * as BlueElectrum from '../../malin_modules/BlueElectrum';
+import ecc from '../../malin_modules/noble_ecc';
+import { hexToUint8Array, concatUint8Arrays } from '../../malin_modules/uint8array-extras';
 import { HDSegwitBech32Wallet } from '..';
 import { randomBytes } from '../rng';
 import { AbstractWallet } from './abstract-wallet';

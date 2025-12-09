@@ -1,7 +1,7 @@
 import React, { ReactNode, useCallback } from 'react';
 import { StyleProp, TouchableOpacityProps, ViewStyle } from 'react-native';
 
-import * as fs from '../blue_modules/fs';
+import * as fs from '../malin_modules/fs';
 import loc from '../loc';
 import { ActionIcons } from '../typings/ActionIcons';
 import ToolTipMenu from './TooltipMenu';

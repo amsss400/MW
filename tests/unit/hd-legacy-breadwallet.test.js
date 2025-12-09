@@ -1,7 +1,7 @@
 import assert from 'assert';
 
 import { HDLegacyBreadwalletWallet } from '../../class';
-import { uint8ArrayToHex } from '../../blue_modules/uint8array-extras';
+import { uint8ArrayToHex } from '../../malin_modules/uint8array-extras';
 
 describe('HDLegacyBreadwalletWallet', () => {
   it('Legacy HD Breadwallet works', async () => {

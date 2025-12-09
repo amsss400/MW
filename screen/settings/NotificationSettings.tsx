@@ -15,7 +15,7 @@ import {
   checkPermissions,
   checkNotificationPermissionStatus,
   NOTIFICATIONS_NO_AND_DONT_ASK_FLAG,
-} from '../../blue_modules/notifications';
+} from '../../malin_modules/notifications';
 import { BlueCard, BlueText } from '../../BlueComponents';
 import presentAlert from '../../components/Alert';
 import { Button } from '../../components/Button';

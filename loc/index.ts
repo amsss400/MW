@@ -7,7 +7,7 @@ import Localization, { LocalizedStrings } from 'react-localization';
 import { I18nManager } from 'react-native';
 import * as RNLocalize from 'react-native-localize';
 
-import { satoshiToLocalCurrency } from '../blue_modules/currency';
+import { satoshiToLocalCurrency } from '../malin_modules/currency';
 import { BitcoinUnit } from '../models/bitcoinUnits';
 import { AvailableLanguages } from './languages';
 import enJson from './en.json';

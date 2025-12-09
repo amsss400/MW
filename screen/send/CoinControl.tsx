@@ -16,7 +16,7 @@ import {
   View,
 } from 'react-native';
 import * as RNLocalize from 'react-native-localize';
-import debounce from '../../blue_modules/debounce';
+import debounce from '../../malin_modules/debounce';
 import { TWallet, Utxo } from '../../class/wallets/types';
 import BottomModal, { BottomModalHandle } from '../../components/BottomModal';
 import Button from '../../components/Button';

@@ -15,7 +15,7 @@ import {
   countElements,
   scanText,
 } from './helperz';
-import { uint8ArrayToHex } from '../../blue_modules/uint8array-extras';
+import { uint8ArrayToHex } from '../../malin_modules/uint8array-extras';
 
 // if loglevel is set to `error`, this kind of logging will still get through
 console.warn = console.log = (...args) => {

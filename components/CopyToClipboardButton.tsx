@@ -2,7 +2,7 @@ import Clipboard from '@react-native-clipboard/clipboard';
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../blue_modules/hapticFeedback';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../malin_modules/hapticFeedback';
 import loc from '../loc';
 
 type CopyToClipboardButtonProps = {

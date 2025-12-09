@@ -3,8 +3,8 @@ import DefaultPreference from 'react-native-default-preference';
 import { Transaction, TWallet } from '../class/wallets/types';
 import { useSettings } from '../hooks/context/useSettings';
 import { useStorage } from '../hooks/context/useStorage';
-import { GROUP_IO_BLUEWALLET } from '../blue_modules/currency';
-import debounce from '../blue_modules/debounce';
+import { GROUP_IO_MALINWALLET } from '../malin_modules/currency';
+import debounce from '../malin_modules/debounce';
 
 enum WidgetCommunicationKeys {
   AllWalletsSatoshiBalance = 'WidgetCommunicationAllWalletsSatoshiBalance',
@@ -19,7 +19,7 @@ const WIDGET_CLEARED_VALUE = '0';
 
 const secondsToMilliseconds = (seconds: number): number => seconds * 1000;
 
-DefaultPreference.setName(GROUP_IO_BLUEWALLET);
+DefaultPreference.setName(GROUP_IO_MALINWALLET);
 
 export const isBalanceDisplayAllowed = async (): Promise<boolean> => {
   try {

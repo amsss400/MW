@@ -1,7 +1,7 @@
 import assert from 'assert';
 
 import { HDSegwitElectrumSeedP2WPKHWallet } from '../../class';
-import { uint8ArrayToHex } from '../../blue_modules/uint8array-extras';
+import { uint8ArrayToHex } from '../../malin_modules/uint8array-extras';
 
 describe('HDSegwitElectrumSeedP2WPKHWallet', () => {
   it('wont accept BIP39 seed', () => {

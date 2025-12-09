@@ -9,7 +9,7 @@ import {
   initCurrencyDaemon,
   mostRecentFetchedRate,
   setPreferredCurrency,
-} from '../../blue_modules/currency';
+} from '../../malin_modules/currency';
 import { BlueCard, BlueText } from '../../BlueComponents';
 import presentAlert from '../../components/Alert';
 import ListItem from '../../components/ListItem';

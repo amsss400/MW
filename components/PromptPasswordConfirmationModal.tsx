@@ -4,7 +4,7 @@ import BottomModal, { BottomModalHandle } from './BottomModal';
 import { useTheme } from '../components/themes';
 import loc from '../loc';
 import { SecondButton } from './SecondButton';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../blue_modules/hapticFeedback';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../malin_modules/hapticFeedback';
 import { useKeyboard } from '../hooks/useKeyboard';
 
 if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental) {

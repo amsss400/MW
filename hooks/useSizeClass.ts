@@ -1,5 +1,5 @@
-import { useSizeClass as useSizeClassOriginal, SizeClass } from '../blue_modules/sizeClass';
-import type { SizeClassInfo } from '../blue_modules/sizeClass';
+import { useSizeClass as useSizeClassOriginal, SizeClass } from '../malin_modules/sizeClass';
+import type { SizeClassInfo } from '../malin_modules/sizeClass';
 
 export { SizeClass };
 export type { SizeClassInfo };

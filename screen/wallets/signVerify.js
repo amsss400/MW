@@ -3,7 +3,7 @@ import { useRoute } from '@react-navigation/native';
 import { ActivityIndicator, Keyboard, LayoutAnimation, Platform, ScrollView, StyleSheet, TextInput, View } from 'react-native';
 import { Icon } from '@rneui/themed';
 import Share from 'react-native-share';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../../blue_modules/hapticFeedback';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../../malin_modules/hapticFeedback';
 import { BlueFormLabel } from '../../BlueComponents';
 import presentAlert from '../../components/Alert';
 import { FButton, FContainer } from '../../components/FloatButtons';

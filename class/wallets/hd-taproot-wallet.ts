@@ -1,6 +1,6 @@
 import BIP32Factory, { BIP32Interface } from 'bip32';
 import { AbstractHDElectrumWallet } from './abstract-hd-electrum-wallet';
-import ecc from '../../blue_modules/noble_ecc';
+import ecc from '../../malin_modules/noble_ecc';
 import * as bitcoin from 'bitcoinjs-lib';
 import { Psbt } from 'bitcoinjs-lib';
 import { CoinSelectReturnInput } from 'coinselect';

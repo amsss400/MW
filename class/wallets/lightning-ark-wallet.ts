@@ -12,9 +12,9 @@ import { LightningCustodianWallet } from './lightning-custodian-wallet.ts';
 import { randomBytes } from '../rng.ts';
 import * as bip39 from 'bip39';
 import { LightningTransaction, Transaction } from './types.ts';
-import { hexToUint8Array, uint8ArrayToHex } from '../../blue_modules/uint8array-extras/index';
+import { hexToUint8Array, uint8ArrayToHex } from '../../malin_modules/uint8array-extras/index';
 import assert from 'assert';
-import ecc from '../../blue_modules/noble_ecc.ts';
+import ecc from '../../malin_modules/noble_ecc.ts';
 import { Measure } from '../measure.ts';
 
 const bip32 = BIP32Factory(ecc);

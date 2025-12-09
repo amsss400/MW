@@ -1,7 +1,7 @@
 import assert from 'assert';
 
 import { HDAezeedWallet, WatchOnlyWallet } from '../../class';
-import { uint8ArrayToHex } from '../../blue_modules/uint8array-extras';
+import { uint8ArrayToHex } from '../../malin_modules/uint8array-extras';
 
 describe('HDAezeedWallet', () => {
   it('can import mnemonics and generate addresses and WIFs', async function () {

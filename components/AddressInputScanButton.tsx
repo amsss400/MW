@@ -3,7 +3,7 @@ import { Image, Keyboard, Platform, StyleSheet, Text } from 'react-native';
 import Clipboard from '@react-native-clipboard/clipboard';
 import ToolTipMenu from './TooltipMenu';
 import loc from '../loc';
-import { showFilePickerAndReadFile, showImagePickerAndReadImage } from '../blue_modules/fs';
+import { showFilePickerAndReadFile, showImagePickerAndReadImage } from '../malin_modules/fs';
 import presentAlert from './Alert';
 import { useTheme } from './themes';
 import RNQRGenerator from 'rn-qr-generator';

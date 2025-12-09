@@ -15,9 +15,9 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTheme } from './themes';
-import { useSizeClass, SizeClass } from '../blue_modules/sizeClass';
-import { isDesktop } from '../blue_modules/environment';
-import debounce from '../blue_modules/debounce';
+import { useSizeClass, SizeClass } from '../malin_modules/sizeClass';
+import { isDesktop } from '../malin_modules/environment';
+import debounce from '../malin_modules/debounce';
 
 if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental) {
   UIManager.setLayoutAnimationEnabledExperimental(true);

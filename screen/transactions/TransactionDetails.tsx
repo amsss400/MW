@@ -5,7 +5,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import assert from 'assert';
 import dayjs from 'dayjs';
 import { InteractionManager, Linking, StyleSheet, Text, TextInput, View } from 'react-native';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../../blue_modules/hapticFeedback';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../../malin_modules/hapticFeedback';
 import { BlueCard, BlueText } from '../../BlueComponents';
 import { Transaction, TWallet } from '../../class/wallets/types';
 import presentAlert from '../../components/Alert';

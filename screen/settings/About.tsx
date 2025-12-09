@@ -4,7 +4,7 @@ import { Alert, Image, Linking, Platform, Pressable, StyleSheet, Text, useWindow
 import { getApplicationName, getBuildNumber, getBundleId, getUniqueIdSync, getVersion, hasGmsSync } from 'react-native-device-info';
 import { Icon } from '@rneui/themed';
 import Rate, { AndroidMarket } from 'react-native-rate';
-import A from '../../blue_modules/analytics';
+import A from '../../malin_modules/analytics';
 import { BlueCard, BlueTextCentered } from '../../BlueComponents';
 import { HDSegwitBech32Wallet } from '../../class';
 import presentAlert from '../../components/Alert';

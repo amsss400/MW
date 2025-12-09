@@ -15,10 +15,10 @@ import {
   RefreshControl,
 } from 'react-native';
 import { Icon } from '@rneui/themed';
-import * as BlueElectrum from '../../blue_modules/BlueElectrum';
-import { isDesktop } from '../../blue_modules/environment';
-import * as fs from '../../blue_modules/fs';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../../blue_modules/hapticFeedback';
+import * as BlueElectrum from '../../malin_modules/BlueElectrum';
+import { isDesktop } from '../../malin_modules/environment';
+import * as fs from '../../malin_modules/fs';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../../malin_modules/hapticFeedback';
 import { LightningArkWallet, LightningCustodianWallet, MultisigHDWallet, WatchOnlyWallet } from '../../class';
 import presentAlert, { AlertType } from '../../components/Alert';
 import { FButton, FContainer } from '../../components/FloatButtons';
@@ -42,7 +42,7 @@ import assert from 'assert';
 import useMenuElements from '../../hooks/useMenuElements';
 import { useSettings } from '../../hooks/context/useSettings';
 import useWalletSubscribe from '../../hooks/useWalletSubscribe';
-import { getClipboardContent } from '../../blue_modules/clipboard';
+import { getClipboardContent } from '../../malin_modules/clipboard';
 import HandOffComponent from '../../components/HandOffComponent';
 import { HandOffActivityType } from '../../components/types';
 import WalletGradient from '../../class/wallet-gradient';

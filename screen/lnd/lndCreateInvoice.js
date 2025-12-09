@@ -15,8 +15,8 @@ import {
 } from 'react-native';
 import { Icon } from '@rneui/themed';
 import { parse } from 'url'; // eslint-disable-line n/no-deprecated-api
-import { btcToSatoshi, fiatToBTC, satoshiToBTC } from '../../blue_modules/currency';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../../blue_modules/hapticFeedback';
+import { btcToSatoshi, fiatToBTC, satoshiToBTC } from '../../malin_modules/currency';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../../malin_modules/hapticFeedback';
 import Lnurl from '../../class/lnurl';
 import presentAlert from '../../components/Alert';
 import * as AmountInput from '../../components/AmountInput';
@@ -28,7 +28,7 @@ import { BitcoinUnit, Chain } from '../../models/bitcoinUnits';
 import * as NavigationService from '../../NavigationService';
 import { useStorage } from '../../hooks/context/useStorage';
 import { DismissKeyboardInputAccessory, DismissKeyboardInputAccessoryViewID } from '../../components/DismissKeyboardInputAccessory';
-import { majorTomToGroundControl, tryToObtainPermissions } from '../../blue_modules/notifications';
+import { majorTomToGroundControl, tryToObtainPermissions } from '../../malin_modules/notifications';
 import { BlueLoading } from '../../components/BlueLoading';
 
 const LNDCreateInvoice = () => {

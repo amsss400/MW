@@ -8,9 +8,9 @@ import { sha256 } from '@noble/hashes/sha256';
 import { ECPairFactory } from 'ecpair';
 import * as mn from 'electrum-mnemonic';
 
-import * as BlueElectrum from '../../blue_modules/BlueElectrum';
-import ecc from '../../blue_modules/noble_ecc';
-import { decodeUR } from '../../blue_modules/ur';
+import * as BlueElectrum from '../../malin_modules/BlueElectrum';
+import ecc from '../../malin_modules/noble_ecc';
+import { decodeUR } from '../../malin_modules/ur';
 import { AbstractHDElectrumWallet } from './abstract-hd-electrum-wallet';
 import { CreateTransactionResult, CreateTransactionTarget, CreateTransactionUtxo } from './types';
 import {
@@ -19,7 +19,7 @@ import {
   concatUint8Arrays,
   uint8ArrayToString,
   compareUint8Arrays,
-} from '../../blue_modules/uint8array-extras';
+} from '../../malin_modules/uint8array-extras';
 
 const ECPair = ECPairFactory(ecc);
 const bip32 = BIP32Factory(ecc);

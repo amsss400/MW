@@ -3,7 +3,7 @@ import Clipboard from '@react-native-clipboard/clipboard';
 import { StyleSheet, Text, View } from 'react-native';
 import { ListItem } from '@rneui/themed';
 import Share from 'react-native-share';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../../blue_modules/hapticFeedback';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../../malin_modules/hapticFeedback';
 import confirm from '../../helpers/confirm';
 import { unlockWithBiometrics, useBiometrics } from '../../hooks/useBiometrics';
 import loc, { formatBalance } from '../../loc';

@@ -1,6 +1,6 @@
 //
 //  WalletAppShortcuts.swift
-//  BlueWallet
+//  MalinWallet
 
 
 import AppIntents

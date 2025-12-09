@@ -13,7 +13,7 @@ import { Chain } from '../models/bitcoinUnits';
 import { FiatUnit } from '../models/fiatUnit';
 import { useSettings } from '../hooks/context/useSettings';
 import { useStorage } from '../hooks/context/useStorage';
-import { isNotificationsEnabled, majorTomToGroundControl } from '../blue_modules/notifications';
+import { isNotificationsEnabled, majorTomToGroundControl } from '../malin_modules/notifications';
 import { LightningTransaction, Transaction } from '../class/wallets/types';
 
 interface Message {

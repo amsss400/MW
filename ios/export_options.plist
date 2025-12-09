@@ -18,16 +18,16 @@
       <string>export</string>
       <key>provisioningProfiles</key>
       <dict>
-          <key>io.bluewallet.bluewallet</key>
-          <string>match AppStore io.bluewallet.bluewallet</string>
-          <key>io.bluewallet.bluewallet.watch</key>
-          <string>match AppStore io.bluewallet.bluewallet.watch</string>
-          <key>io.bluewallet.bluewallet.watch.extension</key>
-          <string>match AppStore io.bluewallet.bluewallet.watch.extension</string>
-          <key>io.bluewallet.bluewallet.Stickers</key>
-          <string>match AppStore io.bluewallet.bluewallet.Stickers</string>
-          <key>io.bluewallet.bluewallet.MarketWidget</key>
-          <string>match AppStore io.bluewallet.bluewallet.MarketWidget</string>
+          <key>com.malinwallet.app</key>
+          <string>match AppStore com.malinwallet.app</string>
+          <key>com.malinwallet.app.watch</key>
+          <string>match AppStore com.malinwallet.app.watch</string>
+          <key>com.malinwallet.app.watch.extension</key>
+          <string>match AppStore com.malinwallet.app.watch.extension</string>
+          <key>com.malinwallet.app.Stickers</key>
+          <string>match AppStore com.malinwallet.app.Stickers</string>
+          <key>com.malinwallet.app.MarketWidget</key>
+          <string>match AppStore com.malinwallet.app.MarketWidget</string>
       </dict>
   </dict>
 </plist>

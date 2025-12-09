@@ -2,10 +2,10 @@ import * as bitcoin from 'bitcoinjs-lib';
 import { CoinSelectTarget } from 'coinselect';
 import { ECPairFactory } from 'ecpair';
 
-import ecc from '../../blue_modules/noble_ecc';
+import ecc from '../../malin_modules/noble_ecc';
 import { LegacyWallet } from './legacy-wallet';
 import { CreateTransactionResult, CreateTransactionUtxo } from './types';
-import { hexToUint8Array } from '../../blue_modules/uint8array-extras';
+import { hexToUint8Array } from '../../malin_modules/uint8array-extras';
 
 const ECPair = ECPairFactory(ecc);
 

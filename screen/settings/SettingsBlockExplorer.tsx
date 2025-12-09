@@ -12,7 +12,7 @@ import {
   removeBlockExplorer,
 } from '../../models/blockExplorer';
 import presentAlert from '../../components/Alert';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../../blue_modules/hapticFeedback';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../../malin_modules/hapticFeedback';
 import { useSettings } from '../../hooks/context/useSettings';
 import SettingsBlockExplorerCustomUrlItem from '../../components/SettingsBlockExplorerCustomUrlListItem';
 import { Header } from '../../components/Header';

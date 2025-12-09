@@ -1,9 +1,9 @@
 //
 //  KeychainHelper.swift
-//  BlueWallet
+//  MalinWallet
 //
 //  Created by Marcos Rodriguez on 11/20/24.
-//  Copyright © 2024 BlueWallet. All rights reserved.
+//  Copyright © 2024 MalinWallet. All rights reserved.
 //
 
 

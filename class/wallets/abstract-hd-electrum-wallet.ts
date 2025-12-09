@@ -10,10 +10,10 @@ import b58 from 'bs58check';
 import { CoinSelectOutput, CoinSelectReturnInput } from 'coinselect';
 import { ECPairFactory, ECPairInterface } from 'ecpair';
 
-import * as BlueElectrum from '../../blue_modules/BlueElectrum';
-import { ElectrumHistory } from '../../blue_modules/BlueElectrum';
-import ecc from '../../blue_modules/noble_ecc';
-import { hexToUint8Array, concatUint8Arrays, uint8ArrayToHex } from '../../blue_modules/uint8array-extras';
+import * as BlueElectrum from '../../malin_modules/BlueElectrum';
+import { ElectrumHistory } from '../../malin_modules/BlueElectrum';
+import ecc from '../../malin_modules/noble_ecc';
+import { hexToUint8Array, concatUint8Arrays, uint8ArrayToHex } from '../../malin_modules/uint8array-extras';
 import { randomBytes } from '../rng';
 import { AbstractHDWallet } from './abstract-hd-wallet';
 import { CreateTransactionResult, CreateTransactionTarget, CreateTransactionUtxo, Transaction, Utxo } from './types';

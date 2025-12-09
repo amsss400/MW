@@ -1,5 +1,5 @@
 import React, { useReducer, useRef } from 'react';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../blue_modules/hapticFeedback';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../malin_modules/hapticFeedback';
 import { BlueCard, BlueText } from '../BlueComponents';
 import presentAlert from '../components/Alert';
 import Button from '../components/Button';

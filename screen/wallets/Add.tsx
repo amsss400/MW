@@ -13,7 +13,7 @@ import {
 } from 'react-native';
 import assert from 'assert';
 
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../../blue_modules/hapticFeedback';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../../malin_modules/hapticFeedback';
 import { BlueButtonLink, BlueFormLabel, BlueText } from '../../BlueComponents';
 import { HDSegwitBech32Wallet, HDTaprootWallet, LightningCustodianWallet, HDLegacyP2PKHWallet, EthereumWallet, SolanaWallet } from '../../class';
 import presentAlert from '../../components/Alert';
@@ -33,7 +33,7 @@ import { AddWalletStackParamList } from '../../navigation/AddWalletStack';
 import { RouteProp, useRoute } from '@react-navigation/native';
 import SafeAreaScrollView from '../../components/SafeAreaScrollView';
 import { BlueSpacing20, BlueSpacing40 } from '../../components/BlueSpacing';
-import { hexToUint8Array, uint8ArrayToHex } from '../../blue_modules/uint8array-extras';
+import { hexToUint8Array, uint8ArrayToHex } from '../../malin_modules/uint8array-extras';
 import { LightningArkWallet } from '../../class/wallets/lightning-ark-wallet.ts';
 
 enum ButtonSelected {

@@ -25,9 +25,9 @@ import {
   View,
 } from 'react-native';
 import RNFS from 'react-native-fs';
-import { btcToSatoshi, fiatToBTC } from '../../blue_modules/currency';
-import * as fs from '../../blue_modules/fs';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../../blue_modules/hapticFeedback';
+import { btcToSatoshi, fiatToBTC } from '../../malin_modules/currency';
+import * as fs from '../../malin_modules/fs';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../../malin_modules/hapticFeedback';
 import { BlueText } from '../../BlueComponents';
 import { HDSegwitBech32Wallet, MultisigHDWallet, WatchOnlyWallet } from '../../class';
 import { ContactList } from '../../class/contact-list';
@@ -54,7 +54,7 @@ import NetworkTransactionFees, { NetworkTransactionFee, NetworkTransactionFeeTyp
 import { SendDetailsStackParamList } from '../../navigation/SendDetailsStackParamList';
 import { CommonToolTipActions, ToolTipAction } from '../../typings/CommonToolTipActions';
 import ActionSheet from '../ActionSheet';
-import { isCancel, pickTransaction } from '../../blue_modules/fs';
+import { isCancel, pickTransaction } from '../../malin_modules/fs';
 import { Measure } from '../../class/measure';
 
 interface IPaymentDestinations {

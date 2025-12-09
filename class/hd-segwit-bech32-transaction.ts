@@ -2,12 +2,12 @@ import BigNumber from 'bignumber.js';
 import * as bitcoin from 'bitcoinjs-lib';
 import assert from 'assert';
 
-import * as BlueElectrum from '../blue_modules/BlueElectrum';
+import * as BlueElectrum from '../malin_modules/BlueElectrum';
 import { HDSegwitBech32Wallet } from './wallets/hd-segwit-bech32-wallet';
 import { SegwitBech32Wallet } from './wallets/segwit-bech32-wallet';
 import { CreateTransactionUtxo } from './wallets/types.ts';
 import { CoinSelectOutput, CoinSelectReturnInput } from 'coinselect';
-import { isUint8Array, uint8ArrayToHex } from '../blue_modules/uint8array-extras';
+import { isUint8Array, uint8ArrayToHex } from '../malin_modules/uint8array-extras';
 
 /**
  * Represents transaction of a BIP84 wallet.

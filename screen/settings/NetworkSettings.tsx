@@ -1,5 +1,5 @@
 import React from 'react';
-import { isNotificationsCapable } from '../../blue_modules/notifications';
+import { isNotificationsCapable } from '../../malin_modules/notifications';
 import ListItem from '../../components/ListItem';
 import loc from '../../loc';
 import { useExtendedNavigation } from '../../hooks/useExtendedNavigation';

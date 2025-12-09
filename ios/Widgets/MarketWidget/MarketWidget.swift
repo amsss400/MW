@@ -3,7 +3,7 @@
 //  MarketWidget
 //
 //  Created by Marcos Rodriguez on 11/6/20.
-//  Copyright © 2020 BlueWallet. All rights reserved.
+//  Copyright © 2020 MalinWallet. All rights reserved.
 //
 
 import WidgetKit

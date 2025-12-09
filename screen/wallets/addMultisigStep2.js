@@ -13,8 +13,8 @@ import {
   View,
 } from 'react-native';
 import { Icon } from '@rneui/themed';
-import triggerHapticFeedback, { HapticFeedbackTypes } from '../../blue_modules/hapticFeedback';
-import { encodeUR } from '../../blue_modules/ur';
+import triggerHapticFeedback, { HapticFeedbackTypes } from '../../malin_modules/hapticFeedback';
+import { encodeUR } from '../../malin_modules/ur';
 import { BlueFormMultiInput, BlueTextCentered } from '../../BlueComponents';
 import { HDSegwitBech32Wallet, MultisigCosigner, MultisigHDWallet } from '../../class';
 import presentAlert from '../../components/Alert';

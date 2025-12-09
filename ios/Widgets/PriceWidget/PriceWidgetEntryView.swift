@@ -1,9 +1,9 @@
 //
 //  PriceWidgetEntryView.swift
-//  BlueWallet
+//  MalinWallet
 //
 //  Created by Marcos Rodriguez on 10/27/24.
-//  Copyright © 2024 BlueWallet. All rights reserved.
+//  Copyright © 2024 MalinWallet. All rights reserved.
 //
 
 import SwiftUI

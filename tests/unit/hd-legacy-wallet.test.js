@@ -2,7 +2,7 @@ import assert from 'assert';
 import * as bitcoin from 'bitcoinjs-lib';
 
 import { HDLegacyP2PKHWallet } from '../../class';
-import { uint8ArrayToHex } from '../../blue_modules/uint8array-extras';
+import { uint8ArrayToHex } from '../../malin_modules/uint8array-extras';
 
 describe('Legacy HD (BIP44)', () => {
   it('works', async () => {
