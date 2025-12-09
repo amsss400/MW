@@ -1,3 +1,4 @@
+
 ci_access:
-  groups:
-    - id: amsss900-group
+  projects:
+    - id: amsss900-group/amsss900-project
