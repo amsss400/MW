@@ -42,7 +42,7 @@ def configure_target()
 end
 
 
-target 'BlueWallet' do
+target .MalinWallet. do
   configure_target()
 end
 
