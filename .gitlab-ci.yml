@@ -22,20 +22,20 @@ build_android:
     expire_in: 1 week
 
 # -----------------------------------------------------------------------------
-# JOB iOS (Compile le code sur Mac M1 - Vérification)
+# JOB iOS (Compile sur Mac M1 - Correctif Image)
 # -----------------------------------------------------------------------------
 build_ios:
   stage: build
   tags:
     - saas-macos-medium-m1
-  image: macos-13-xcode-14
+  image: macos-14-xcode-15
   before_script:
     - npm install --legacy-peer-deps
     - cd ios
     - pod install
   script:
-    - echo "🍏 Compilation iOS en cours (Mode Simulateur pour valider le code)..."
-    - xcodebuild -workspace MalinWallet.xcworkspace -scheme MalinWallet -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14' build CODE_SIGNING_ALLOWED=NO
+    - echo "🍏 Compilation iOS en cours (Mode Simulateur)..."
+    - xcodebuild -workspace MalinWallet.xcworkspace -scheme MalinWallet -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15' build CODE_SIGNING_ALLOWED=NO
   artifacts:
     paths:
       - ios/build/
