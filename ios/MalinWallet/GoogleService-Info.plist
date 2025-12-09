@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>CLIENT_ID</key>
+<string>341622379332-j1stffaoud6st86crhrukb7njffciq21.apps.googleusercontent.com</string>
+<key>REVERSED_CLIENT_ID</key>
+<string>com.googleusercontent.apps.341622379332-j1stffaoud6st86crhrukb7njffciq21</string>
+<key>API_KEY</key>
+<string>AIzaSyBaNdsteb1HRWU0P_5jXwiVgTkQlPfxOJk</string>
+<key>GCM_SENDER_ID</key>
+<string>341622379332</string>
+<key>PLIST_VERSION</key>
+<string>1</string>
+<key>BUNDLE_ID</key>
+<string>com.malinwallet.app</string>
+<key>PROJECT_ID</key>
+<string>malin-wallet</string>
+<key>STORAGE_BUCKET</key>
+<string>malin-wallet.firebasestorage.app</string>
+<key>IS_ADS_ENABLED</key>
+<false></false>
+<key>IS_ANALYTICS_ENABLED</key>
+<false></false>
+<key>IS_APPINVITE_ENABLED</key>
+<true></true>
+<key>IS_GCM_ENABLED</key>
+<true></true>
+<key>IS_SIGNIN_ENABLED</key>
+<true></true>
+<key>GOOGLE_APP_ID</key>
+<string>1:341622379332:ios:bd149d0a02042e2d77fd11</string>
+<key>DATABASE_URL</key>
+<string>https://malin-wallet-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
