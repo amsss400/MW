@@ -18,9 +18,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B47B21E82B2128B8001F6690"
-               BuildableName = "BlueWalletUITests.xctest"
-               BlueprintName = "BlueWalletUITests"
-               ReferencedContainer = "container:BlueWallet.xcodeproj">
+               BuildableName = "MalinWalletUITests.xctest"
+               BlueprintName = "MalinWalletUITests"
+               ReferencedContainer = "container:MalinWallet.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -40,9 +40,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "BlueWallet.app"
-            BlueprintName = "BlueWallet"
-            ReferencedContainer = "container:BlueWallet.xcodeproj">
+            BuildableName = "MalinWallet.app"
+            BlueprintName = "MalinWallet"
+            ReferencedContainer = "container:MalinWallet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "BlueWallet.app"
-            BlueprintName = "BlueWallet"
-            ReferencedContainer = "container:BlueWallet.xcodeproj">
+            BuildableName = "MalinWallet.app"
+            BlueprintName = "MalinWallet"
+            ReferencedContainer = "container:MalinWallet.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

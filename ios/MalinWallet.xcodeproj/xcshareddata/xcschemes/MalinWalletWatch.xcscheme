@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B40D4E2F225841EC00428FCC"
-               BuildableName = "BlueWalletWatch.app"
-               BlueprintName = "BlueWalletWatch"
-               ReferencedContainer = "container:BlueWallet.xcodeproj">
+               BuildableName = "MalinWalletWatch.app"
+               BlueprintName = "MalinWalletWatch"
+               ReferencedContainer = "container:MalinWallet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "BlueWallet.app"
-               BlueprintName = "BlueWallet"
-               ReferencedContainer = "container:BlueWallet.xcodeproj">
+               BuildableName = "MalinWallet.app"
+               BlueprintName = "MalinWallet"
+               ReferencedContainer = "container:MalinWallet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,9 +49,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B47B21E82B2128B8001F6690"
-               BuildableName = "BlueWalletUITests.xctest"
-               BlueprintName = "BlueWalletUITests"
-               ReferencedContainer = "container:BlueWallet.xcodeproj">
+               BuildableName = "MalinWalletUITests.xctest"
+               BlueprintName = "MalinWalletUITests"
+               ReferencedContainer = "container:MalinWallet.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -66,15 +66,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
-      notificationPayloadFile = "BlueWalletWatch/PushNotificationPayload.apns">
+      notificationPayloadFile = "MalinWalletWatch/PushNotificationPayload.apns">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B40D4E2F225841EC00428FCC"
-            BuildableName = "BlueWalletWatch.app"
-            BlueprintName = "BlueWalletWatch"
-            ReferencedContainer = "container:BlueWallet.xcodeproj">
+            BuildableName = "MalinWalletWatch.app"
+            BlueprintName = "MalinWalletWatch"
+            ReferencedContainer = "container:MalinWallet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -84,15 +84,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES"
-      notificationPayloadFile = "BlueWalletWatch/PushNotificationPayload.apns">
+      notificationPayloadFile = "MalinWalletWatch/PushNotificationPayload.apns">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B40D4E2F225841EC00428FCC"
-            BuildableName = "BlueWalletWatch.app"
-            BlueprintName = "BlueWalletWatch"
-            ReferencedContainer = "container:BlueWallet.xcodeproj">
+            BuildableName = "MalinWalletWatch.app"
+            BlueprintName = "MalinWalletWatch"
+            ReferencedContainer = "container:MalinWallet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
