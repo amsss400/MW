@@ -78,7 +78,7 @@ export const writeFileAndExport = async function (fileName: string, contents: st
 export const openSignedTransaction = async function (): Promise<string | false> {
   try {
     const [res] = await pick({
-      type: Platform.OS === 'ios' ? ['io.bluewallet.psbt', 'io.bluewallet.psbt.txn', types.json] : [types.allFiles],
+      type: Platform.OS === 'ios' ? ['com.malinwallet.psbt', 'com.malinwallet.psbt.txn', types.json] : [types.allFiles],
     });
 
     return await _readPsbtFileIntoBase64(res.uri);

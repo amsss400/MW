@@ -25,8 +25,8 @@ class DeeplinkSchemaMatch {
     return (
       lowercaseString.startsWith('bitcoin:') ||
       lowercaseString.startsWith('lightning:') ||
-      lowercaseString.startsWith('blue:') ||
-      lowercaseString.startsWith('bluewallet:') ||
+      lowercaseString.startsWith('mw:') ||
+      lowercaseString.startsWith('malinwallet:') ||
       lowercaseString.startsWith('lapp:')
     );
   }
