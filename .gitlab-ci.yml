@@ -1,0 +1,244 @@
+# MalinWallet GitLab CI/CD Pipeline Configuration
+# Comprehensive pipeline for lint, test, build, and deployment
+
+image: node:20-alpine
+
+stages:
+  - lint
+  - test
+  - build
+  - deploy
+
+variables:
+  NODE_ENV: production
+  FF_USE_FASTZIP: "true"
+  CACHE_COMPRESSION_LEVEL: "fastest"
+
+# ============================================================================
+# CACHE CONFIGURATION
+# ============================================================================
+
+.cache_npm: &cache_npm
+  cache:
+    key:
+      files:
+        - package-lock.json
+      prefix: npm
+    paths:
+      - node_modules/
+      - .npm/
+    policy: pull-push
+
+.cache_gradle: &cache_gradle
+  cache:
+    key:
+      files:
+        - android/gradle/wrapper/gradle-wrapper.properties
+      prefix: gradle
+    paths:
+      - android/.gradle/
+      - android/app/build/
+    policy: pull-push
+
+.cache_pods: &cache_pods
+  cache:
+    key:
+      files:
+        - ios/Podfile.lock
+      prefix: pods
+    paths:
+      - ios/Pods/
+    policy: pull-push
+
+# ============================================================================
+# LINT STAGE
+# ============================================================================
+
+lint:typescript:
+  stage: lint
+  <<: *cache_npm
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run tslint
+  only:
+    - merge_requests
+    - main
+    - develop
+  allow_failure: false
+
+lint:eslint:
+  stage: lint
+  <<: *cache_npm
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run lint
+  only:
+    - merge_requests
+    - main
+    - develop
+  allow_failure: false
+
+# ============================================================================
+# TEST STAGE
+# ============================================================================
+
+test:unit:
+  stage: test
+  <<: *cache_npm
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run unit
+  artifacts:
+    paths:
+      - coverage/
+    expire_in: 1 week
+  only:
+    - merge_requests
+    - main
+    - develop
+  allow_failure: false
+
+test:integration:
+  stage: test
+  <<: *cache_npm
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run integration
+  artifacts:
+    paths:
+      - coverage/
+    expire_in: 1 week
+  only:
+    - merge_requests
+    - main
+    - develop
+  allow_failure: true
+
+security:audit:
+  stage: test
+  <<: *cache_npm
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm audit --audit-level=moderate || true
+  only:
+    - merge_requests
+    - main
+    - develop
+  allow_failure: true
+
+# ============================================================================
+# BUILD STAGE - ANDROID
+# ============================================================================
+
+build:android:debug:
+  stage: build
+  image: reactnativecommunity/react-native-android:latest
+  <<: *cache_gradle
+  <<: *cache_npm
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+    - cd android && chmod +x gradlew
+  script:
+    - cd android && ./gradlew assembleDebug --build-cache
+  artifacts:
+    paths:
+      - android/app/build/outputs/apk/debug/
+    expire_in: 1 week
+  only:
+    - merge_requests
+    - develop
+  allow_failure: false
+
+build:android:release:
+  stage: build
+  image: reactnativecommunity/react-native-android:latest
+  <<: *cache_gradle
+  <<: *cache_npm
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+    - cd android && chmod +x gradlew
+    - echo $KEYSTORE_FILE_HEX | base64 -d > android/app/malinwallet-release-key.keystore
+  script:
+    - cd android && ./gradlew assembleRelease -Pandroid.injected.signing.store.file=app/malinwallet-release-key.keystore -Pandroid.injected.signing.store.password=$KEYSTORE_PASSWORD -Pandroid.injected.signing.key.alias=$KEY_ALIAS -Pandroid.injected.signing.key.password=$KEY_PASSWORD --build-cache
+  artifacts:
+    paths:
+      - android/app/build/outputs/apk/release/
+      - android/app/build/outputs/bundle/release/
+    expire_in: 30 days
+  only:
+    - main
+    - tags
+  when: manual
+  allow_failure: false
+
+# ============================================================================
+# BUILD STAGE - iOS
+# ============================================================================
+
+build:ios:debug:
+  stage: build
+  image: macos-12-xcode-14
+  <<: *cache_pods
+  <<: *cache_npm
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+    - cd ios && pod install --repo-update
+  script:
+    - xcodebuild -workspace ios/MalinWallet.xcworkspace -scheme MalinWallet -configuration Debug -derivedDataPath ios/build -verbose
+  artifacts:
+    paths:
+      - ios/build/
+    expire_in: 1 week
+  only:
+    - merge_requests
+    - develop
+  tags:
+    - macos
+  allow_failure: false
+
+build:ios:release:
+  stage: build
+  image: macos-12-xcode-14
+  <<: *cache_pods
+  <<: *cache_npm
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+    - cd ios && pod install --repo-update
+  script:
+    - xcodebuild -workspace ios/MalinWallet.xcworkspace -scheme MalinWallet -configuration Release -derivedDataPath ios/build -archivePath ios/build/MalinWallet.xcarchive -verbose archive
+  artifacts:
+    paths:
+      - ios/build/MalinWallet.xcarchive/
+    expire_in: 30 days
+  only:
+    - main
+    - tags
+  tags:
+    - macos
+  when: manual
+  allow_failure: false
+
+# ============================================================================
+# DEPLOY STAGE
+# ============================================================================
+
+deploy:playstore:
+  stage: deploy
+  image: reactnativecommunity/react-native-android:latest
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+    - cd android && chmod +x gradlew
+    - echo $KEYSTORE_FILE_HEX | base64 -d > android/app/malinwallet-release-key.keystore
+  script:
+    - cd android && ./gradlew bundleRelease -Pandroid.injected.signing.store.file=app/malinwallet-release-key.keystore -Pandroid.injected.signing.store.password=$KEYSTORE_PASSWORD -Pandroid.injected.signing.key.alias=$KEY_ALIAS -Pandroid.injected.signing.key.password=$KEY_PASSWORD
+  only:
+    - main
+    - tags
+  when: manual
+  allow_failure: false
+
