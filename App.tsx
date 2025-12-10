@@ -4,7 +4,7 @@ import { useColorScheme } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { SizeClassProvider } from './components/Context/SizeClassProvider';
 import { SettingsProvider } from './components/Context/SettingsProvider';
-import { BlueDarkTheme, BlueDefaultTheme } from './components/themes';
+import { MalinDarkTheme, MalinDefaultTheme } from './components/themes';
 import MasterView from './navigation/MasterView';
 import { navigationRef } from './NavigationService';
 import { useLogger } from '@react-navigation/devtools';
@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <SizeClassProvider>
-      <NavigationContainer ref={navigationRef} theme={colorScheme === 'dark' ? BlueDarkTheme : BlueDefaultTheme}>
+      <NavigationContainer ref={navigationRef} theme={colorScheme === 'dark' ? MalinDarkTheme : MalinDefaultTheme}>
         <SafeAreaProvider>
           <StorageProvider>
             <SettingsProvider>
