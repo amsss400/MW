@@ -1,0 +1,42 @@
+type User @table {
+  createdAt: Timestamp!
+  lastLogin: Timestamp
+}
+
+type Wallet @table {
+  user: User!
+  type: String!
+  createdAt: Timestamp!
+  name: String
+}
+
+type Transaction @table {
+  wallet: Wallet!
+  type: String!
+  amount: Float!
+  currency: String!
+  timestamp: Timestamp!
+  status: String!
+  address: String
+  invoice: String
+  fee: Float
+  memo: String
+}
+
+type Address @table {
+  wallet: Wallet!
+  addressString: String!
+  createdAt: Timestamp!
+  label: String
+}
+
+type Invoice @table {
+  wallet: Wallet!
+  invoiceString: String!
+  amount: Float!
+  currency: String!
+  expiresAt: Timestamp!
+  createdAt: Timestamp!
+  memo: String
+  settledAt: Timestamp
+}
